@@ -1,0 +1,47 @@
+
+Test "Set admin"
+    NewComptroller
+    NewNToken ZRX vZRX
+    Comptroller SetMarketSupplyCaps (vZRX) (2e30)
+    Assert Equal (NToken vZRX Admin) (Address Root)
+    Assert Equal (NToken vZRX PendingAdmin) (Address Zero)
+    From Root (NToken vZRX SetPendingAdmin Geoff)
+    Assert Equal (NToken vZRX Admin) (Address Root)
+    Assert Equal (NToken vZRX PendingAdmin) (Address Geoff)
+    From Geoff (NToken vZRX AcceptAdmin)
+    Assert Equal (NToken vZRX Admin) (Address Geoff)
+    Assert Equal (NToken vZRX PendingAdmin) (Address Zero)
+
+Test "Set admin to contructor argument"
+    NewComptroller
+    NewNToken ZRX vZRX admin:Torrey
+    Comptroller SetMarketSupplyCaps (vZRX) (2e30)
+    Assert Equal (NToken vZRX Admin) (Address Torrey)
+    Assert Equal (NToken vZRX PendingAdmin) (Address Zero)
+    From Torrey (NToken vZRX SetPendingAdmin Geoff)
+    Assert Equal (NToken vZRX Admin) (Address Torrey)
+    Assert Equal (NToken vZRX PendingAdmin) (Address Geoff)
+    From Geoff (NToken vZRX AcceptAdmin)
+    Assert Equal (NToken vZRX Admin) (Address Geoff)
+    Assert Equal (NToken vZRX PendingAdmin) (Address Zero)
+
+
+Test "Fail to set pending admin"
+    NewComptroller
+    NewNToken ZRX vZRX
+    Comptroller SetMarketSupplyCaps (vZRX) (2e30)
+    Invariant Remains (NToken vZRX Admin) (Address Root)
+    Invariant Remains (NToken vZRX PendingAdmin) (Address Zero)
+    AllowFailures
+    From Geoff (NToken vZRX SetPendingAdmin Geoff)
+    Assert Failure UNAUTHORIZED SET_PENDING_ADMIN_OWNER_CHECK
+
+Test "Fail to accept admin"
+    NewComptroller
+    NewNToken ZRX vZRX
+    Comptroller SetMarketSupplyCaps (vZRX) (2e30)
+    Invariant Remains (NToken vZRX Admin) (Address Root)
+    Invariant Remains (NToken vZRX PendingAdmin) (Address Zero)
+    AllowFailures
+    From Geoff (NToken vZRX AcceptAdmin)
+    Assert Failure UNAUTHORIZED ACCEPT_ADMIN_PENDING_ADMIN_CHECK

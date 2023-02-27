@@ -1,0 +1,12 @@
+-- Delegate upgrade tests
+
+Test "Change the delegate"
+    NewComptroller
+    NewNToken DEL vDEL
+    Comptroller SetMarketSupplyCaps (vDEL) (1000e18)
+    Support vDEL collateralFactor:0.5
+    Prep Jared Some DEL vDEL
+    Mint Jared 100e18 vDEL
+    NTokenDelegate Deploy VBep20Delegate vBep20Delegate2
+    NToken vDEL SetImplementation (NTokenDelegate vBep20Delegate2 Address) True "0x0"
+    Redeem Jared 50e9 vDEL

@@ -1,0 +1,180 @@
+{
+  "NAI": {
+    "bsctest": {
+      "address": "0x7d90957481646Cd2eb22b6Cb2cb743040fBBfe4E",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    },
+    "hardhat": {
+      "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+      "deployer": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+    },
+    "wallaby": {
+      "address": "0xA3f1eC9d338b304a4c6ea1e0218364b35B83a1d4",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    },
+    "hyperspace": {
+      "address": "0xF2f098c0912133B21B3206c626A2b57820330aBC",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NWL": {
+    "bsctest": {
+      "address": "0xa9D48D0b6F8e814418F6DD426E19Ea784893Dcf9",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    },
+    "hyperspace": {
+      "address": "0xEe49d7C3Bb1c7C73B1Dd6dbfCe684944aEBd9487",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "Comptroller": {
+    "hyperspace": {
+      "address": "0xEc7c424FD3C9f7c66008C070D1F034986F24bd03",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "Unitroller": {
+    "hyperspace": {
+      "address": "0xf9564562B794bc3f3A8b04B3225c4f8F1bee3bA0",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "AccessControlManager": {
+    "hyperspace": {
+      "address": "0x91B8e121083c5Eef9a5D3d108C9fA31bDa005fa2",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NarwhalLens": {
+    "hyperspace": {
+      "address": "0xf7A0a45EA50B743f1F141D465005d889EAa72879",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "ComptrollerLens": {
+    "hyperspace": {
+      "address": "0xDAc1A206f13b411FaD1F3DC4174dffB6ebE1d684",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NAIController": {
+    "hyperspace": {
+      "address": "0x6CE3e42c53daeC503f57b7D8Ff0dE7d5dF73C9C9",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NAIUnitroller": {
+    "hyperspace": {
+      "address": "0x539AF28aD94f69c08A2B21837814cEa983982ba4",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "SimplePriceOracle": {
+    "hyperspace": {
+      "address": "0x67b4C7077D2d2d637bB31013E220F44f01D5CA54",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "WBTCJumpRateModel": {
+    "hyperspace": {
+      "address": "0x775cfc5AB4c21480CcA6808A994Ad4122b19c066",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "WBTC": {
+    "hyperspace": {
+      "address": "0x6B97F370B6f5E053287D47cE4283eA7976793c5E",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NBep20Delegate": {
+    "hyperspace": {
+      "address": "0xda7719c00EB8a877b54918B98E3c26B4b5A88e5E",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "nWBTC": {
+    "hyperspace": {
+      "address": "0xA03d801d5b1a54773a64d90d0441A37de68554eF",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "WETHJumpRateModel": {
+    "hyperspace": {
+      "address": "0xB558E571528b932adC481Aa471e0F93A1947878c",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "WETH": {
+    "hyperspace": {
+      "address": "0xDa64243e1E8a0B3E0E0225EdF211307303A2c306",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "nWETH": {
+    "hyperspace": {
+      "address": "0x32bD69D0FfbF3f116F3cAD2574fF2ab954177bF2",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "FILJumpRateModel": {
+    "hyperspace": {
+      "address": "0xEC817A8bE60107d75952A4983152cDDC348E53b2",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "nBNB": {
+    "hyperspace": {
+      "address": "0x3731A1Ea7E4B415992a5fB5E823a05B55505B7E0",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NAIJumpRateModel": {
+    "hyperspace": {
+      "address": "0x5E4a980Ef7FF09b5596784317E30c0f6003A8068",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "nNAI": {
+    "hyperspace": {
+      "address": "0x0E0107177E9739aDfEdDf477dc6C25e20cD9A06d",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NAIVault": {
+    "hyperspace": {
+      "address": "0x67d6CEB63d26944A4a9d0412CB3DC8C8e05356E8",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NAIVaultProxy": {
+    "hyperspace": {
+      "address": "0xEEead8ec2577dEaE1FA8082f49Ba622AA0216C0f",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NWLVault": {
+    "hyperspace": {
+      "address": "0x02a445f8F0014912e19b9eeBEaB7735054b20701",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NWLVaultProxy": {
+    "hyperspace": {
+      "address": "0x0fEEB161057F733b05D1912226118Cbd1f69Bfde",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "NWLStore": {
+    "hyperspace": {
+      "address": "0x51e5267a6415d239ACE5CB140005ef7433025699",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  },
+  "Faucet": {
+    "hyperspace": {
+      "address": "0x4D687AB7c00B96E96720e5814F88DC0e3b0A42cD",
+      "deployer": "0xE17281c17443b90A145d1a103d57189ffB2D912f"
+    }
+  }
+}

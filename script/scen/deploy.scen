@@ -1,0 +1,16 @@
+-- Next a comptroller
+Unitroller Deploy
+PriceOracle Deploy Simple
+ComptrollerImpl Deploy Standard MyStandard
+Unitroller SetPendingImpl MyStandard
+ComptrollerImpl MyStandard Become
+Comptroller SetPriceOracle (PriceOracle Address)
+Comptroller SetMaxAssets 20
+Comptroller SetCloseFactor 0.5
+Comptroller LiquidationIncentive 1.1
+--Comptroller SetNarwhalRate 1e18
+NewNToken ZRX vZRX
+NewNToken BAT vBAT
+Support vZRX collateralFactor:0.5
+Support vBAT collateralFactor:0.5
+Comptroller AddNarwhalMarkets (vZRX vBAT)
